@@ -1,0 +1,36 @@
+.yt-video .video h2 {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 50px;
+}
+
+@media all and (max-width: 500px) {
+  .yt-video .video h2 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+}
+
+.yt-video .video p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media all and (max-width: 500px) {
+  .yt-video .video p {
+    margin-bottom: 40px;
+  }
+}
+
+.yt-video .video p a {
+  text-decoration: none;
+  color: #148a4b;
+}
+
+.yt-video .video iframe {
+  width: 100%;
+  height: 60vh;
+}
+/*# sourceMappingURL=videoyt.css.map */
