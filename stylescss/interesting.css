@@ -1,0 +1,63 @@
+.interest {
+  background-image: url("/image/infozamowienie.jpg");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.interest .content-interest {
+  text-align: center;
+  padding: 3rem;
+  margin: 100px 0;
+}
+
+@media all and (max-width: 500px) {
+  .interest .content-interest {
+    margin: 30px 0px;
+    padding: 2rem 1rem;
+  }
+}
+
+.interest .content-interest p {
+  font-size: 30px;
+  color: #fff;
+}
+
+@media all and (max-width: 500px) {
+  .interest .content-interest p {
+    font-size: 23px;
+  }
+}
+
+.interest .content-interest .button-interest {
+  font-size: 22px;
+  border: 1px solid #fff;
+  width: 150px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 500px) {
+  .interest .content-interest .button-interest {
+    font-size: 19px;
+    width: 130px;
+  }
+}
+
+.interest .content-interest .button-interest a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media all and (max-width: 500px) {
+  .interest .content-interest .button-interest a {
+    padding: 5px;
+  }
+}
+
+.interest .content-interest .button-interest :hover {
+  background: rgba(255, 255, 255, 0.171);
+}
+/*# sourceMappingURL=interesting.css.map */

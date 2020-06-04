@@ -1,0 +1,100 @@
+.contact {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5rem;
+  margin: 80px 0;
+}
+
+@media all and (max-width: 800px) {
+  .contact {
+    display: block;
+    padding: 0 3rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .contact {
+    padding: 0 1rem;
+  }
+}
+
+.contact .contact-content {
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 1000px) {
+  .contact .contact-content {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .contact .contact-content {
+    width: 80%;
+  }
+}
+
+.contact .contact-content h2 {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+@media all and (max-width: 500px) {
+  .contact .contact-content h2 {
+    font-size: 40px;
+  }
+}
+
+.contact .contact-content p {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+@media all and (max-width: 500px) {
+  .contact .contact-content p {
+    font-size: 22px;
+  }
+}
+
+.contact .contact-content ul {
+  margin-top: 50px;
+  padding: 0;
+}
+
+.contact .contact-content li {
+  list-style-type: none;
+  font-size: 25px;
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+@media all and (max-width: 500px) {
+  .contact .contact-content li {
+    font-size: 22px;
+  }
+}
+
+.contact .contact-content a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contact .contact-content :hover {
+  color: #148a4b;
+}
+
+.contact .contact-content :last-child {
+  border: 0;
+}
+
+.contact .icons-contact {
+  font-size: 30px;
+  margin-top: 50px;
+}
+/*# sourceMappingURL=kontakt.css.map */

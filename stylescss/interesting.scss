@@ -1,0 +1,48 @@
+.interest{
+    background-image: url("/image/infozamowienie.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    .content-interest{
+        text-align: center;
+        padding: 3rem;
+        margin: 100px 0;
+       
+        @media all and (max-width: 500px){
+            margin: 30px 0px;
+            padding: 2rem 1rem;
+            
+        }
+        
+        p{
+            font-size: 30px;
+            color: #fff;
+            @media all and(max-width: 500px){
+                font-size: 23px;
+            }
+        }
+        .button-interest{
+            font-size: 22px;
+            border: 1px solid #fff;
+            width: 150px;
+            margin: 0 auto;
+           @media all and (max-width: 500px){
+               font-size: 19px;
+               width: 130px;
+           }
+            a{
+                text-decoration: none;
+                color: #fff;
+                display: block;
+                padding: 10px;
+                transition: .3s;
+                @media all and (max-width: 500px){
+                    padding: 5px;
+                }
+            }
+            :hover{
+                background: rgba(255, 255, 255, 0.171);
+            }
+            
+        }
+    }
+}

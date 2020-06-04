@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #148a4b;
+}
+
+.footer .footer-content {
+  text-align: center;
+  padding: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #148a4b;
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,20 @@
+.about{
+    background: rgba(0, 0, 0, 0.041);
+    margin-top: 200px;
+    
+    .content-about{
+        display: flex;
+        
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .text-about{
+            font-size: 25px;
+            text-align: justify;
+            padding: 5rem;
+            margin-top: 70px;
+            line-height: 1.5;
+        }
+    }
+}
