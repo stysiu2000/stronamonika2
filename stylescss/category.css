@@ -74,4 +74,16 @@
             flex-direction: column;
   }
 }
+
+.section-two .category .inne-opis {
+  text-align: center;
+  margin: 0 0 40px 0;
+  padding: 0;
+  font-size: 23px;
+  color: #148a4b;
+}
+
+.section-two .category .inne-header {
+  margin: 20px 0 0px 0;
+}
 /*# sourceMappingURL=category.css.map */

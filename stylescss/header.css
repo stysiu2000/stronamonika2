@@ -16,7 +16,7 @@ body {
   background: #fff;
   -webkit-box-shadow: rgba(34, 34, 34, 0.1) 0 5px 10px;
   box-shadow: rgba(34, 34, 34, 0.1) 0 5px 10px;
-  
+  text-shadow: 1px 1px #ccc;
   position: fixed;
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;

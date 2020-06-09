@@ -1,5 +1,6 @@
 // W stylecss/midleimage.css NAPISANY jest css
 .section-two{
+   
     .category{
         h2{
             text-align: center;
@@ -30,6 +31,7 @@
             
             .img-category-one{
                 margin: 0 20px 0 0;
+               
                 
                 img{
                     width: 100%;
@@ -40,6 +42,7 @@
         }
         .category-two{
             display: flex;
+           
             @media all and (max-width: 800px){
                 flex-direction: column;
             }
@@ -50,6 +53,16 @@
                 flex-direction: column;
             }
         }
-    
+       
+        .inne-opis{
+            text-align: center;
+            margin: 0 0 40px 0;
+            padding:0;
+            font-size: 23px;
+            color:#148a4b;
+        }
+        .inne-header{
+            margin: 20px 0 0px 0;
+        }
     }
 }
