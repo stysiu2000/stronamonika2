@@ -17,6 +17,9 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,700;1,300&display=swap"
       rel="stylesheet"
     />
+    
+    <link rel="shortcut icon" type="image/png" href="zdjeciamoniki/logo1.png">
+
     <link rel="stylesheet" href="fontello/css/fontello.css" />
     <link rel="stylesheet" href="stylecss/middleimage.css" />
     <link rel="stylesheet" href="stylecss/navsmall.css" />
@@ -31,6 +34,9 @@
     <link rel="stylesheet" href="stylescss/category.css" />
     <link rel="stylesheet" href="stylescss/footer.css" />
     <link rel="stylesheet" href="stylecss/scrollup.css" />
+    <link rel="stylesheet" href="stylecss/scroll.css">
+    <link rel="stylesheet" href="stylecss/slide.css">
+    <link rel="stylesheet" href="stylecss/modal.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <link rel="stylesheet" href="fontello2/css/fontello.css" />
     <script src="scripts/jquery.scrollTo.min.js"></script>
@@ -52,11 +58,21 @@
           $('#menuToggle > input').click();
         });
 
+        $(".kontakt2").click(function (e) {
+          e.preventDefault();
+          $.scrollTo($(".contact"), 800);
+          
+        });
+
         $(".home").click(function (e) {
           e.preventDefault();
           $.scrollTo($("body"), 800);
           $('#menuToggle > input').click();
         });
+
+
+       
+
       });
 
       //pokaż podczas przewijania
@@ -98,6 +114,9 @@
       logged_out_greeting="Cześć. Mogę Ci w czymś pomóc?"
     ></div>
 
+
+   
+
     <nav class="nav">
       <div class="img-nav">
         <a href="#"> <img src="zdjeciamoniki/logo2.png" class="logonav" /></a>
@@ -129,13 +148,79 @@
         </ul>
       </div>
     </nav>
+
+                                         <!-- SCROLL UP -->
+
+   
+
+  
     
     <div class="container">
       <section class="section-one">
         <div class="img-banner">
-          <img src="image/banner2.jpg" />
+          <img src="zdjeciamoniki/baranek.jpg" />
+          
         </div>
       </section>
+
+
+                            <!-- SLIDER -->
+                            
+      <section class="home-slide" style="margin-top:100px">
+        <div class="slider">
+                <div class="slide active slide-jpg" >
+                    <div class="container-slide">
+                        <div class="caption">
+                            <h1>Jakiś opis zdjęcia</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, ea!</p>
+                            <!-- <a href=""></a> -->
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="slide slide-jpg2" >
+                    <div class="container-slide">
+                        <div class="caption">
+                            <h1>Drugi opis zdjęcia</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, odio!</p>
+                            <!-- <a href=""></a> -->
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="slide slide-jpg3" >
+                    <div class="container-slide">
+                        <div class="caption">
+                            <h1>Trzeci opis zdjęcia</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, iusto!</p>
+                            <!-- <a href=""></a> -->
+                        </div>
+                    </div>
+                </div>
+        </div>
+  
+        <!--Controls-->
+  
+        <div class="controls">
+            <div class="prev"></div>
+            <div class="next"></div>
+        </div>
+  
+        <!--indicators-->
+        <div class="indicator">
+            
+        </div>
+  
+    </section>
+
+
+    <section class="instagram-social" style="margin-top: 50px;">
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div class="elfsight-app-2c9cafac-2f7d-4903-a077-ebaf625ea2ab"></div>
+    </section>
+
+
+
       <!-- SECTION THREE ZAINTERESOWANIE -->
 
       <section class="interest">
@@ -145,7 +230,7 @@
             Wykonuję macrame na zamówienia.
           </p>
           <div class="button-interest">
-            <a class="kontakt" href="">Kontakt</a>
+            <a class="kontakt2" href="">Kontakt</a>
           </div>
         </div>
       </section>
@@ -157,7 +242,7 @@
             <!-- IMAGE ONE -->
 
             <div class="content-image">
-              <img src="zdjeciamoniki/drzewko1.jpeg" alt="drzewko" class="image-test" />
+              <img src="zdjeciamoniki/drzewko1.jpeg" alt="drzewko- opis1" class="image-test" data-original= "/zdjeciamoniki/drzewko1.jpeg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -170,7 +255,7 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
@@ -179,7 +264,7 @@
             <!-- Image TWO -->
 
             <div class="content-image">
-              <img src="zdjeciamoniki/drzewko2.jpeg" alt="drzewko" class="image-test" />
+              <img src="zdjeciamoniki/drzewko4.jpg" alt="drzewko2- opis2" class="image-test" data-original= "zdjeciamoniki/drzewko4.jpg" />
 
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
@@ -193,7 +278,7 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
@@ -201,8 +286,8 @@
 
             <!-- IMAGE THREE -->
 
-            <div class="content-image">
-              <img src="zdjeciamoniki/drzewko3.jpeg" alt="drzewko" class="image-test" />
+            <div class="content-image" style="margin-right: 0px;">
+              <img src="zdjeciamoniki/drzewko2.jpeg" alt="drzewko- opis3" class="image-test"  data-original= "zdjeciamoniki/drzewko2.jpeg" />
 
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
@@ -216,7 +301,7 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
@@ -224,35 +309,16 @@
 
             <!-- IMAGE FOUR -->
 
-            <div class="content-image" style="margin-right: 0px;">
-              <img src="zdjeciamoniki/drzewko4.jpg" alt="drzewko" class="image-test" />
-
-              <figcaption class="describe-image">Macrame na patyku</figcaption>
-
-              <p class="price">169.00zł</p>
-
-              <div class="middle">
-                <div class="text">
-                  <h3>Macrame 169zł</h3>
-                  <p>
-                    Jeśli jesteś zainteresowany kupnem, skontaktuj się ze mną
-                  </p>
-
-                  <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
         <!-- CATEGORY TWO -->
 
         <div class="category">
-          <h2>Macrame na kiju</h2>
+          <h2></h2>
           <div class="category-two">
             <div class="content-image">
-              <img src="zdjeciamoniki/imgkij3.jpg" alt="macramenakiju" class="image-test" />
+              <img src="zdjeciamoniki2/610_0041.jpg" alt="macramenakiju" class="image-test" data-original="zdjeciamoniki2/610_0041.jpg"/>
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -265,14 +331,14 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="content-image">
-              <img src="zdjeciamoniki/kij.jpeg" alt="macramenakiju2" class="image-test" />
+              <img src="zdjeciamoniki2/610_0045.jpg" alt="macramenakiju2" class="image-test" data-original="zdjeciamoniki2/610_0045.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -285,14 +351,15 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
+          
             <div class="content-image" style="margin-right: 0px;">
-              <img src="zdjeciamoniki/imgkij.jpeg" alt="Avatar" class="image-test" />
+              <img src="zdjeciamoniki2/610_0047.jpg" alt="macramenakiju2" class="image-test" data-original="zdjeciamoniki2/610_0047.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -305,41 +372,26 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- <div class="content-image" style="margin-right: 0px;">
-              <img src="image/car4.jpg" alt="Avatar" class="image-test" />
-              <figcaption class="describe-image">Macrame na patyku</figcaption>
 
-              <p class="price">169.00zł</p>
+           
 
-              <div class="middle">
-                <div class="text">
-                  <h3>Macrame 169zł</h3>
-                  <p>
-                    Jeśli jesteś zainteresowany kupnem, skontaktuj się ze mną
-                  </p>
 
-                  <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
-                  </div>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
 
         <!-- CATEGORY THREE-->
 
         <div class="category">
-          <h2>Łapacze snów</h2>
+          <h2></h2>
           <div class="category-three">
             <div class="content-image">
-              <img src="zdjeciamoniki/lapacz4.jpg" alt="lapacz" class="image-test" />
+              <img src="zdjeciamoniki2/610_0040.jpg" alt="lapacz" class="image-test" data-original="zdjeciamoniki2/610_0040.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -352,14 +404,16 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
+
+            
 
             <div class="content-image">
-              <img src="zdjeciamoniki/imglapacz2.jpg" alt="lapacz" class="image-test" />
+              <img src="zdjeciamoniki2/imglapacz2.jpg" alt="lapacz" class="image-test" data-original="zdjeciamoniki2/imglapacz2.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -372,14 +426,14 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="content-image">
-              <img src="zdjeciamoniki/lapacz7.jpeg" alt="lapacz" class="image-test" />
+            <div class="content-image" style="margin-right:0px;">
+              <img src="zdjeciamoniki2/lapacz5.jpeg" alt="lapacz" class="image-test" data-original="zdjeciamoniki2/lapacz5.jpeg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -392,41 +446,23 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="content-image" style="margin-right: 0px;">
-              <img src="zdjeciamoniki/lapacz5.jpeg" alt="Avatar" class="image-test" />
-              <figcaption class="describe-image">Macrame na patyku</figcaption>
-
-              <p class="price">169.00zł</p>
-
-              <div class="middle">
-                <div class="text">
-                  <h3>Macrame 169zł</h3>
-                  <p>
-                    Jeśli jesteś zainteresowany kupnem, skontaktuj się ze mną
-                  </p>
-
-                  <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
+            
           </div>
         </div>
 
         <!-- CATEGORY FOUR -->
 
         <div class="category">
-          <h2>Torebki</h2>
+          <h2></h2>
           <div class="category-three">
             <div class="content-image">
-              <img src="zdjeciamoniki/torebka1.jpg" alt="Avatar" class="image-test" />
+              <img src="zdjeciamoniki2/610_0056.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/610_0056.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -439,14 +475,14 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="content-image">
-              <img src="zdjeciamoniki/imgtorebka.jpeg" alt="Avatar" class="image-test" />
+              <img src="zdjeciamoniki2/610_0060.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/610_0060.jpg"/>
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -459,14 +495,42 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div class="content-image" style="margin-right: 0px">
+              <img src="zdjeciamoniki2/610_0058.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/610_0058.jpg" />
+              <figcaption class="describe-image">Macrame na patyku</figcaption>
+
+              <p class="price">169.00zł</p>
+
+              <div class="middle">
+                <div class="text">
+                  <h3>Macrame 169zł</h3>
+                  <p>
+                    Jeśli jesteś zainteresowany kupnem, skontaktuj się ze mną
+                  </p>
+
+                  <div class="button-image">
+                    <a class="kontakt2" href="">Kontakt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           
+          </div>
+        </div>
+
+        <div class="category">
+          <h2></h2>
+          <div class="category-three">
 
             <div class="content-image">
-              <img src="zdjeciamoniki/imgtorebka2.jpeg" alt="Avatar" class="image-test" />
+              <img src="zdjeciamoniki2/610_0049.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/610_0049.jpg"/>
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -479,14 +543,14 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="content-image" style="margin-right: 0px;">
-              <img src="zdjeciamoniki/torebka2.jpg" alt="Avatar" class="image-test" />
+            <div class="content-image" style="margin-right: 0px">
+              <img src="zdjeciamoniki2/610_0051.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/610_0051.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -499,20 +563,22 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
+
+
           </div>
         </div>
 
 
         <div class="category">
-          <h2>Kolczyki</h2>
+          <h2></h2>
           <div class="category-three">
             <div class="content-image">
-              <img src="zdjeciamoniki/kolczyki1.jpg" alt="Avatar" class="image-test" />
+              <img src="zdjeciamoniki2/610_0080.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/610_0080.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -525,14 +591,14 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="content-image" style="margin-right: 0px;">
-              <img src="zdjeciamoniki/kolczyki3.jpg" alt="Avatar" class="image-test" />
+            <div class="content-image">
+              <img src="zdjeciamoniki2/610_0087.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/610_0087.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -545,23 +611,43 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
             
+
+            <div class="content-image" style="margin-right: 0px;">
+              <img src="zdjeciamoniki2/610_0091.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/610_0091.jpg" />
+              <figcaption class="describe-image">Macrame na patyku</figcaption>
+
+              <p class="price">169.00zł</p>
+
+              <div class="middle">
+                <div class="text">
+                  <h3>Macrame 169zł</h3>
+                  <p>
+                    Jeśli jesteś zainteresowany kupnem, skontaktuj się ze mną
+                  </p>
+
+                  <div class="button-image">
+                    <a class="kontakt2" href="">Kontakt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
             
           </div>
         </div>
 
 
         <div class="category">
-          <h2>Lampiony</h2>
+          <h2></h2>
           <div class="category-three">
             <div class="content-image">
-              <img src="zdjeciamoniki/lampion1.jpeg" alt="Avatar" class="image-test" />
+              <img src="zdjeciamoniki/lampion1.jpeg" alt="Avatar" class="image-test" data-original="zdjeciamoniki/lampion1.jpeg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -574,14 +660,16 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
+           
+
             <div class="content-image">
-              <img src="zdjeciamoniki/lampion2.jpeg" alt="Avatar" class="image-test" />
+              <img src="zdjeciamoniki/lampion3.jpeg" alt="Avatar" class="image-test" data-original="zdjeciamoniki/lampion3.jpeg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -594,34 +682,14 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="content-image">
-              <img src="zdjeciamoniki/lampion3.jpeg" alt="Avatar" class="image-test" />
-              <figcaption class="describe-image">Macrame na patyku</figcaption>
-
-              <p class="price">169.00zł</p>
-
-              <div class="middle">
-                <div class="text">
-                  <h3>Macrame 169zł</h3>
-                  <p>
-                    Jeśli jesteś zainteresowany kupnem, skontaktuj się ze mną
-                  </p>
-
-                  <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="content-image" style="margin-right: 0px;">
-              <img src="zdjeciamoniki/lampion4.jpeg" alt="Avatar" class="image-test" />
+              <img src="zdjeciamoniki/lampion4.jpeg" alt="Avatar" class="image-test"  data-original="zdjeciamoniki/lampion4.jpeg"/>
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -634,7 +702,7 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
@@ -646,11 +714,12 @@
         
 
         <div class="category">
-          <h2 class="inne-header">Inne </h2>
-          <p class="inne-opis">zapraszam także do składania zamówień pomysłów indywidualnych</p>
+          <h2></h2>
+          <!-- <h2 class="inne-header"> </h2> -->
+          <!-- <p class="inne-opis">zapraszam także do składania zamówień pomysłów indywidualnych</p> -->
           <div class="category-three">
             <div class="content-image">
-              <img src="zdjeciamoniki/inne1.jpg" alt="Avatar" class="image-test" />
+              <img src="zdjeciamoniki2/610_0062.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/610_0062.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -663,14 +732,14 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="content-image">
-              <img src="zdjeciamoniki/inne2.jpg" alt="Avatar" class="image-test" />
+              <img src="zdjeciamoniki2/610_0071.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/610_0071.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -683,14 +752,14 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="content-image" style="margin-right: 0px;">
-              <img src="zdjeciamoniki/inne9.jpeg" alt="Avatar" class="image-test" />
+              <img src="zdjeciamoniki2/610_0065.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/610_0065.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -703,7 +772,7 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
@@ -720,7 +789,7 @@
           <h2></h2>
           <div class="category-three">
             <div class="content-image">
-              <img src="zdjeciamoniki/inne3.jpeg" alt="Avatar" class="image-test" />
+              <img src="zdjeciamoniki2/610_0103.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/610_0103.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -733,14 +802,14 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="content-image">
-              <img src="zdjeciamoniki/inne4.jpeg" alt="Avatar" class="image-test" />
+              <img src="zdjeciamoniki2/unnamed-6.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/unnamed-6.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -753,14 +822,14 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="content-image" >
-              <img src="zdjeciamoniki/inne5.jpeg" alt="Avatar" class="image-test" />
+            <div class="content-image" style="margin-right:0px;">
+              <img src="zdjeciamoniki2/610_0069.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/610_0069.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -773,32 +842,13 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="content-image" style="margin-right: 0px;">
-              <img src="zdjeciamoniki/inne6.jpeg" alt="Avatar" class="image-test" />
-              <figcaption class="describe-image">Macrame na patyku</figcaption>
-
-              <p class="price">169.00zł</p>
-
-              <div class="middle">
-                <div class="text">
-                  <h3>Macrame 169zł</h3>
-                  <p>
-                    Jeśli jesteś zainteresowany kupnem, skontaktuj się ze mną
-                  </p>
-
-                  <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            
            
             
           
@@ -810,7 +860,7 @@
           <h2></h2>
           <div class="category-three">
             <div class="content-image">
-              <img src="zdjeciamoniki/inne7.jpeg" alt="Avatar" class="image-test" />
+              <img src="zdjeciamoniki2/610_0097.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/610_0097.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -823,14 +873,14 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="content-image" style="margin-right: 0px;">
-              <img src="zdjeciamoniki/inne11.jpg" alt="Avatar" class="image-test" />
+              <img src="zdjeciamoniki2/unnamed-2.jpg" alt="Avatar" class="image-test" data-original="zdjeciamoniki2/unnamed-2.jpg" />
               <figcaption class="describe-image">Macrame na patyku</figcaption>
 
               <p class="price">169.00zł</p>
@@ -843,7 +893,7 @@
                   </p>
 
                   <div class="button-image">
-                    <a class="kontakt" href="">Kontakt</a>
+                    <a class="kontakt2" href="">Kontakt</a>
                   </div>
                 </div>
               </div>
@@ -860,20 +910,8 @@
 
       </section>
 
-      <!-- SECTION FOUR ABOUT -->
+     
 
-      <!-- <section class="about">
-      
-      <div class="content-about">
-          
-          
-            <img src="/app/assets/images/omnie.jpg" class="image-about">
-          
-          <div class="text-about">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam aperiam sapiente numquam, necessitatibus a fugit, reprehenderit, odit inventore magni dolor non! Ratione vel corporis voluptatum, vitae delectus voluptate ipsa adipisci eveniet animi porro. Ullam quo aperiam repellendus assumenda impedit dolore hic fugit nulla quasi quam, magnam dolores vel voluptatem consectetur dignissimos eveniet unde corporis quae ad, magni iste sequi et neque illum. Vero doloribus cumque numquam assumenda delectus? Unde voluptas aliquid sapiente quo dolorem non iste tempore est, reiciendis laborum harum expedita modi sunt praesentium eum aspernatur laudantium ratione id soluta architecto veritatis rerum ipsam. Ad et libero dicta possimus.
-          </div>
-      </div>
-    </section> -->
 
       <!-- SECTION FIVE FILM YT -->
 
@@ -883,7 +921,7 @@
           <p>
             Zrealizowany przy współpracy z
             <a
-              href="https://www.instagram.com/arczi_robi_zdjecia/?hl=pl"
+              href="https://www.instagram.com/arczi_robi_zdjecia/?hl=pllo"
               target="blank"
               >Arturem</a
             >
@@ -899,10 +937,10 @@
         </div>
       </section>
 
-      <section class="instagram-social" style="margin-top: 50px;">
+      <!-- <section class="instagram-social" style="margin-top: 50px;">
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
         <div class="elfsight-app-2c9cafac-2f7d-4903-a077-ebaf625ea2ab"></div>
-      </section>
+      </section> -->
 
       <!-- SECTION SIX CONTACT(in footer) -->
 
@@ -945,47 +983,13 @@
           </div>
         </div>
 
-        <!-- FORMULARZ W CSS -> html -->
-
-        <!-- 
-      <form class= "form" id="contactForm" method="post" action="./send-script.php">
-        <p class="text-form">Lub skorzystaj z formularza</p>
-        <div class="form-row">
-            <label for = "name">Imię(min. 3 znaki)*</label>
-            <input type= "text" name="name" required pattern=.{3,} id="name" data-error-text="Wypełnij to pole">
-        </div>
         
-        <div class="form-row">
-            <label for="email">Email*</label>
-            <input type="email" name="email" required id="email" data-error-text="Wpisz poprawny email">
-        </div>
-        
-        <div class="form-row">
-            <label for="message">Wiadomość*</label>
-            <textarea name="message" required data-error-text="Musisz wypełnić pole" id="message"></textarea>
-
-        </div>
-        
-        <div class="form-row">
-            <button type="submit" class="submit-btn">
-                Wyślij
-            </button>
-        </div>
-    </form> -->
-
-        <!-- <div class="form-small">
-    <script type="text/javascript" src="//www.abcsubmit.com/embed/id_1e9lr7h32_g45/easy-contact-us.js" data-role="abcsubmit-form-embed" data-document-id="id_1e9lr7h32_g45" ></script>
-    </div>
-    -->
       </section>
 
       <!-- <div class='embedsocial-instagram' data-ref="c4dd96e4b20608dc82770e284de4fe2da393496a"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script> -->
     </div>
 
-    <!-- <div class="scrollup">
-  <i class="demo-icon icon-angle-up"></i>
-</div> -->
-
+  
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-content">
@@ -1000,6 +1004,15 @@
       </div>
     </footer>
 
+
+    <div class="modal">
+      <img src="/zdjeciamoniki/drzewko1.jpeg" alt="" class="full-img">
+      <p class="caption">ss</p>
+
+     </div>
+
+
+    <script src="scripts/modal.js"></script>
     <script src="scripts/jquery.js"></script>
 
     <script>
@@ -1015,6 +1028,8 @@
       });
     </script>
 
+    <script src="scripts/slide.js"></script>
     <script src="scripts/form.js"></script>
+    <script src="scripts/javascript.js"></script>
   </body>
 </html>
