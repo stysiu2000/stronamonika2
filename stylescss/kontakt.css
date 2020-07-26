@@ -3,6 +3,11 @@
   margin: 0 auto;
   padding: 0 5rem;
   margin: 80px 0;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
 @media all and (max-width: 800px) {
@@ -96,5 +101,11 @@
 .contact .icons-contact {
   font-size: 30px;
   margin-top: 50px;
+}
+
+.intro-appear {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 /*# sourceMappingURL=kontakt.css.map */

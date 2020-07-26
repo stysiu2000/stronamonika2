@@ -6,7 +6,11 @@
     margin: 0 auto;
     padding: 0 5rem;
     margin: 80px 0;
-    
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.5s all ease-in-out;
+
     @media all and (max-width: 800px){
         display: block;
         padding: 0 3rem;
@@ -78,4 +82,8 @@
         
         
     }
+}
+.intro-appear {
+  opacity: 1;
+  transform: translateY(0px);
 }

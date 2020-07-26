@@ -1,7 +1,15 @@
 .content-image {
     position: relative; 
     width: auto;
-    margin-right: 20px;
+    margin-right: 10px;
+    
+    
+  }
+  .content-image img{
+    cursor: pointer;
+  }
+  .content-image img:hover{
+    /* transform: scale(1.2); */
   }
   @media all and (max-width:800px){
       .content-image{
@@ -69,4 +77,16 @@
     .price{
       margin-bottom: 30px;
     }
+    .text-middle-mobile h3{
+      margin:0;
+      text-align: center;
+      font-size: 10px;
+    }
+    .text-middle-mobile p{
+      margin:0;
+    }
+    .button-image a{
+      font-size: 19px;
+    }
   }
+  

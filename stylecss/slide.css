@@ -1,0 +1,156 @@
+
+*{
+    box-sizing: border-box;
+}
+.slide-jpg{
+    background-image: url('/image/slide/zdj1.jpeg');
+    background-position: top 100%;
+}
+.slide-jpg2{
+    background-image: url("/image/slide/zdj2.jpg");
+    background-position: top;
+    
+}
+.slide-jpg3{
+    background-image: url("/image/slide/zdj3.jpg");
+    
+}
+.home-slide{
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    
+    margin: 0 auto;
+}
+.home-slide .slide{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    display: none;
+    padding:  0 15px;
+    animation: slide 2s ease;
+}
+.home-slide .slide.active{
+    display: flex;
+}
+@keyframes slide{
+    0%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.container-slide{
+    max-width: 1170px;
+    margin: auto;
+    
+}
+.home-slide .container-slide{
+    flex-grow: 1;
+}
+.home-slide .caption{
+    width: 50%;
+}
+.home-slide .caption h1{
+    font-size: 40px;
+    color: #fff;
+    margin: 0;
+    animation: captionText .5s ease forwards;
+}
+.home-slide .slide.active .caption h1{
+    opacity :0;
+    animation: captionText .5s ease forwards;
+    animation-delay:  1s;
+}
+.home-slide .caption p{
+    font-size: 17px;
+    margin: 15px 0 30px;
+    color: #fff;
+}
+.home-slide .slide.active .caption p{
+    opacity :0;
+    animation: captionText .5s ease forwards;
+    animation-delay:  1.2s
+}
+.home-slide .caption a{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #000;
+    text-decoration: none;
+    color: #fff; 
+}
+.home-slide .slide.active .caption a{
+    opacity :0;
+    animation: captionText .5s ease forwards;
+    animation-delay:  1.4s
+}
+@keyframes captionText{
+    0%{
+        opacity: 0; transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1; transform: translateX(0);
+    }
+}
+/* .home-slide .controls .prev,
+.home-slide .controls .next{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+    color: #fff;
+    background: #148a4b;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .5s  ease;
+} */
+
+.home-slide .controls .prev:hover,
+.home-slide .controls .next:hover{
+    background: #000;
+}
+.home-slide .controls .prev{
+    left: 0;
+}
+.home-slide .controls .next{
+    right: 0;
+}
+.home-slide .indicator{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+.home-slide .indicator div{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    /* background: #ff5722; */
+    background: #148a4b;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.home-slide .indicator div.active{
+    background: #000;
+}
+
+@media (max-width: 767px){
+    .controls{
+        display: none;
+    }
+}

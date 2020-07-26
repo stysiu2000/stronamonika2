@@ -16,13 +16,13 @@ body{
     box-shadow: rgba(34,34,34,0.1) 0 5px 10px;
    
     
-    text-shadow: 1px 1px #ccc;
+    
     
     position: fixed;
     transition-timing-function: linear;
     transition-duration: 200ms;
     transition-property: all;
-    z-index: 222;
+    z-index: 333333;
     
     @media all and (max-width:1024px){
         display: none;
@@ -32,7 +32,7 @@ body{
    .img-nav{
        margin-left: 200px;
        img{
-           width: 200px;
+           width: 180px;
            height: 150px;
            transition: 0.3s;
        }
@@ -66,7 +66,7 @@ body{
   .img-nav{
     
       img{
-          width: 120px;
+          width: 105px;
           height: 80px;
           transition: 0.3s;
       }
@@ -92,6 +92,7 @@ body{
         }
         .img-banner{
            text-align: center;
+           margin-top: 70px;
             img{
                 width: 100%;
                 
