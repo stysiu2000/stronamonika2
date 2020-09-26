@@ -16,7 +16,6 @@ body {
   background: #fff;
   -webkit-box-shadow: rgba(34, 34, 34, 0.1) 0 5px 10px;
   box-shadow: rgba(34, 34, 34, 0.1) 0 5px 10px;
-  text-shadow: 1px 1px #ccc;
   position: fixed;
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
@@ -24,7 +23,7 @@ body {
           transition-duration: 200ms;
   -webkit-transition-property: all;
   transition-property: all;
-  z-index: 222;
+  z-index: 333333;
 }
 
 @media all and (max-width: 1024px) {
@@ -38,7 +37,7 @@ body {
 }
 
 .nav .img-nav img {
-  width: 200px;
+  width: 180px;
   height: 150px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -73,7 +72,7 @@ body {
 }
 
 .small .img-nav img {
-  width: 120px;
+  width: 105px;
   height: 80px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -98,7 +97,6 @@ body {
 }
 
 .container .section-one {
-  padding-top: 120px;
   margin: 0 auto;
 }
 
@@ -110,6 +108,7 @@ body {
 
 .container .section-one .img-banner {
   text-align: center;
+  margin-top: 70px;
 }
 
 .container .section-one .img-banner img {

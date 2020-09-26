@@ -1,101 +1,110 @@
-
-body{
+body {
     font-family: 'Jost', sans-serif;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    font-size: 23px; 
+    font-size: 23px;
     background: #fff;
-    
-    -webkit-box-shadow: rgba(34,34,34,0.1) 0 5px 10px;
-    box-shadow: rgba(34,34,34,0.1) 0 5px 10px;
-   
-    
-    
-    
+
+    -webkit-box-shadow: rgba(34, 34, 34, 0.1) 0 5px 10px;
+    box-shadow: rgba(34, 34, 34, 0.1) 0 5px 10px;
+
+
+
+
     position: fixed;
     transition-timing-function: linear;
     transition-duration: 200ms;
     transition-property: all;
     z-index: 333333;
-    
-    @media all and (max-width:1024px){
+
+    @media all and (max-width:1024px) {
         display: none;
     }
-    
 
-   .img-nav{
-       margin-left: 200px;
-       img{
-           width: 180px;
-           height: 150px;
-           transition: 0.3s;
-       }
-   }
-    
-    .ul-nav{
+
+    .img-nav {
+        margin-left: 200px;
+
+        img {
+            width: 180px;
+            height: 150px;
+            transition: 0.3s;
+        }
+    }
+
+    .ul-nav {
         display: flex;
         margin: 70px 200px 0 0;
-        
 
-        li{
+
+        li {
             list-style-type: none;
             padding: 0 30px 0 0;
-            a{
+
+            a {
                 text-decoration: none;
                 color: #000;
                 transition: 0.3s;
             }
-            :hover{
+
+            :hover {
                 color: #148a4b;
             }
         }
     }
 }
 
-.small{
+.small {
 
-   font-size: 18px;
-   font-weight: 100;
-    
-  .img-nav{
-    
-      img{
-          width: 105px;
-          height: 80px;
-          transition: 0.3s;
-      }
-  }
-  .ul-nav{
-      margin: 30px 200px 0 0;
-      transition: 0s;
-      padding:0;
-  }
+    font-size: 18px;
+    font-weight: 100;
+
+    .img-nav {
+
+        img {
+            width: 105px;
+            height: 80px;
+            transition: 0.3s;
+        }
+    }
+
+    .ul-nav {
+        margin: 30px 200px 0 0;
+        transition: 0s;
+        padding: 0;
+    }
 }
 
-.container{
+.container {
     width: 80%;
     margin: 0 auto;
-    @media screen and (max-width: 1300px){
+
+    @media screen and (max-width: 1300px) {
         width: 90%;
     }
-    .section-one{
-        padding-top: 120px;
+
+    .section-one {
+        padding-top: 50px;
         margin: 0 auto;
-        @media all and (max-width: 1024px){
+
+        @media all and (max-width: 1024px) {
             padding-top: 20px;
         }
-        .img-banner{
-           text-align: center;
-           margin-top: 70px;
-            img{
+
+        .img-banner {
+            text-align: center;
+            margin-top: 70px;
+
+            img {
                 width: 100%;
-                
+
             }
         }
     }
