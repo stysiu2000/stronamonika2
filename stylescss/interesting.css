@@ -20,11 +20,27 @@
 .interest .content-interest p {
   font-size: 30px;
   color: #fff;
+  background: rgba(0, 0, 0, 0.479);
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 @media all and (max-width: 500px) {
   .interest .content-interest p {
     font-size: 23px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .interest .content-interest p {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .interest .content-interest p {
+    width: 100%;
   }
 }
 

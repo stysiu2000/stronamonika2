@@ -3,14 +3,14 @@
 }
 
 .slide-jpg {
-    background-image: url('/zdjeciamoniki/imgkij3.jpg');
-
-
+    /* background-image: url('/zdjeciamoniki/imgkij3.jpg'); */
+    background-image: url("/zdjeciamoniki3/szaramacrame.jpg");
+    background-position: center;
 }
 
 .slide-jpg2 {
     background-image: url("/zdjeciamoniki/inne9.jpeg");
-    background-position: top;
+    /* background-position: top; */
 
 }
 
@@ -20,7 +20,7 @@
 }
 
 .home-slide {
-    height: 60vh;
+    height: 80vh;
     overflow: hidden;
     position: relative;
 
@@ -74,6 +74,16 @@
     color: #fff;
     margin: 0;
     animation: captionText .5s ease forwards;
+}
+
+@media screen and (max-width: 480px) {
+    .home-slide .caption h1 {
+        font-size: 33px;
+    }
+
+    .home-slide .caption {
+        width: 80%;
+    }
 }
 
 .home-slide .slide.active .caption h1 {
